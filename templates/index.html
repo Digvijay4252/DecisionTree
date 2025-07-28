@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Performance Predictor</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #74ebd5, #acb6e5);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        max-width: 400px;
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 25px;
+        color: #333;
+      }
+
+      input {
+        width: 100%;
+        padding: 12px 15px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: 0.3s;
+      }
+
+      input:focus {
+        border-color: #4caf50;
+        outline: none;
+        box-shadow: 0 0 8px #4caf5070;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      .prediction {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #1b1b1b;
+        background-color: #d4edda;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #c3e6cb;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>📊 Student Performance Predictor</h1>
+      <form method="POST">
+        <input
+          type="number"
+          step="any"
+          name="hours_studied"
+          placeholder="Hours Studied"
+          required
+        />
+        <input
+          type="number"
+          step="any"
+          name="attendance"
+          placeholder="Attendance (%)"
+          required
+        />
+        <input
+          type="number"
+          step="any"
+          name="assignments_completed"
+          placeholder="Assignments Completed"
+          required
+        />
+        <input
+          type="number"
+          step="any"
+          name="sleep_hours"
+          placeholder="Sleep Hours"
+          required
+        />
+        <button type="submit">🔍 Predict</button>
+      </form>
+      {% if prediction %}
+      <div class="prediction">Prediction: {{ prediction }}</div>
+      {% endif %}
+    </div>
+  </body>
+</html>

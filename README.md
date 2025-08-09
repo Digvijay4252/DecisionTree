@@ -76,7 +76,15 @@ Prediction Output: Yes (Pass)
 
 ```
 ## Screenshots
+
+### Step 1
 <img width="872" height="746" alt="image" src="https://github.com/user-attachments/assets/e544c60a-2dbd-475b-9883-059a438387e1" />
+
+### Step 2
+<img width="1883" height="906" alt="image" src="https://github.com/user-attachments/assets/0fce8bb9-9632-4493-b76e-5a0d804146d0" />
+
+### Step 3
+<img width="1901" height="914" alt="image" src="https://github.com/user-attachments/assets/b79d8cfd-e6a8-499e-bd92-146617fe228e" />
 
 ## Future Improvements
 Future Enhancements
